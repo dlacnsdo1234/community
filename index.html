@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>사무엘커뮤니티</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        if(navigator.userAgent.includes("KAKAOTALK")){
+            location.href="https://fabulous-centaur-7dc495.netlify.app/#";
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="title-box">
+            <a href="#" class="title-logo"><img src="images/logo_gray.png"></a>
+        </div>
+        <div class="lang-switch-container">
+            <div class="lang-switch-box" id="switch-box">
+                <div class="lang-bg-slider"></div>
+                <button onclick="setLanguage('ko')" id="lang-ko" class="lang-btn active">KO</button>
+                <button onclick="setLanguage('en')" id="lang-en" class="lang-btn">EN</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-box">
+        <div class="swiper-title"><p id="mag-title"></p></div>
+        <div class="swiper mySwiper2">
+            <div class="swiper-wrapper" id="mainWrapper"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper" id="thumbWrapper"></div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <a href="https://www.samuelhillch.com/" target="_blank" class="link-box church">
+            <div class="img-area"></div>
+            <div class="info-area">
+                <div class="text-inner">
+                    <div class="text-logo normal"><img src="images/logo_gray.png"></div>
+                    <h1 class="link-label" data-ko="사무엘힐주말전원교회" data-en="SAMUELHILL WEEKEND RETREAT CHURCH"></h1>
+                </div>
+            </div>
+        </a>
+        <a href="http://samuelhillacademy.com/" target="_blank" class="link-box academy">
+            <div class="img-area"></div>
+            <div class="info-area">
+                <div class="text-inner">
+                    <div class="text-logo raw"><img src="images/academy_logo.png"></div>
+                    <h1 class="link-label" data-ko="사무엘힐크리스천스쿨" data-en="SAMUELHILL CHRISTIAN SCHOOL"></h1>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.samuelhillch.ca/" target="_blank" class="link-box canada">
+            <div class="img-area"></div>
+            <div class="info-area">
+                <div class="text-inner">
+                    <div class="text-logo normal"><img src="images/logo_gray.png"></div>
+                    <h1 class="link-label" data-ko="캐나다사무엘힐커뮤니티교회" data-en="CANADA SAMUELHILL COMMUNITY CHURCH"></h1>
+                </div>
+            </div>
+        </a>
+        <a href="https://biblestay.com/" target="_blank" class="link-box biblestay">
+            <div class="img-area"></div>
+            <div class="info-area">
+                <div class="text-inner">
+                    <div class="text-logo raw"><img src="images/biblestay_logo.png"></div>
+                    <h1 class="link-label" data-ko="바이블스테이" data-en="BIBLESTAY"></h1>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="image-modal" id="imageModal">
+        <span class="modal-close">&times;</span>
+        <div class="swiper modalSwiper">
+            <div class="swiper-wrapper" id="modalZoomWrapper"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-logo"><img src="images/logo_gray.png"></div>
+        <div class="footer-info-box">
+            <p class="footer-info-title">사무엘커뮤니티</p>
+            <p class="footer-info-sub" id="footer-text"></p>
+            <p class="footer-copyright">© 2026 사무엘커뮤니티. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
