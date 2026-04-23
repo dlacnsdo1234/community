@@ -5,6 +5,8 @@ const CONFIG = {
         title: "사무엘힐커뮤니티 소식지 <br class='mobile-only'> < 갈릴리 이야기 >", 
         imgPrefix: "images/magazine/galilee", 
         count: 17, 
+        footerTitle:"사무엘힐커뮤니티",
+        copyrightName:"사무엘힐커뮤니티",
         footer: "전화 : 054-533-1907 │ 팩스 : 054-533-1908 <br class='mobile-only'> │ 주소 : 37141 경북 상주시 화남면 원정소곡로 629" 
     },
     en: { 
@@ -13,6 +15,8 @@ const CONFIG = {
         title: "Samuel Community Newsletter <br class='mobile-only'> < Galilee Story >", 
         imgPrefix: "images/magazine_en/galilee_en", 
         count: 17, 
+        footerTitle:"SAMUELHILL COMMUNITY",
+        copyrightName:"SAMUELHILL COMMUNITY",
         footer: "Tel: +82-54-533-1907 <br class='mobile-only'> | Addr: 629, Wonjeongsogok-ro, Sangju-si, Gyeongbuk" 
     }
 };
@@ -55,6 +59,12 @@ function renderContent(lang) {
     const data = CONFIG[lang];
     document.getElementById('mag-title').innerHTML = data.title;
     document.getElementById('footer-text').innerHTML = data.footer;
+    if(document.getElementById('footer-logo-text')) {
+        document.getElementById('footer-logo-text').innerText = data.footerTitle;
+    }
+    if(document.getElementById('copyright-name')) {
+        document.getElementById('copyright-name').innerText = data.copyrightName;
+    }
     document.querySelectorAll('.link-label').forEach(el => el.innerHTML = el.getAttribute(`data-${lang}`));
 
     let mainHtml = '', thumbHtml = '', modalHtml = '';
