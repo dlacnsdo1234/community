@@ -79,7 +79,7 @@ html, body { background-color: #fffcee; margin: 0; font-family: 'Poppins', sans-
 .text-inner { display: flex; align-items: center; gap: 10px; }
 .text-logo { width: 40px; height: 40px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
 .text-logo.bg-circle { background: #f9f9f9; border-radius: 50%; }
-.text-logo img { width: 75%; height: auto; object-fit: contain; }
+.text-logo img { width: 100%; height: auto; object-fit: contain; }
 .text-inner h1 { font-size: 15px; margin: 0; color: #0e143b; line-height: 1.4; font-weight: 700; }
 
 /* 푸터 글자 크기 복구 */
