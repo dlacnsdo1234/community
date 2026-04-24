@@ -12,7 +12,7 @@ const CONFIG = {
     en: { 
         label: "English", 
         flag: "https://flagcdn.com/w40/us.png", 
-        title: "Samuel Community Newsletter <br class='mobile-only'> < Galilee Story >", 
+        title: "Samuelhill Community Newsletter <br class='mobile-only'> < Galilee Story >", 
         imgPrefix: "images/magazine_en/galilee_en", 
         count: 17, 
         footerTitle:"SAMUELHILL COMMUNITY",
