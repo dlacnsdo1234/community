@@ -49,7 +49,7 @@ html, body { background-color: #fffcee; margin: 0; font-family: 'Poppins', sans-
 /* 스와이퍼 */
 .mySwiper2 { width: 100%; height: 500px; }
 .mySwiper2 .swiper-slide img { width: 100%; height: 100%; object-fit: contain; cursor: pointer; }
-.mySwiper { height: 130px; padding: 15px 20px; box-sizing: border-box; }
+.mySwiper { height: 150px; padding: 15px 20px; box-sizing: border-box; }
 .mySwiper .swiper-slide { border-radius: 12px; opacity: 0.4; transition: 0.3s; position: relative; }
 .mySwiper .swiper-slide-thumb-active { opacity: 1; }
 .mySwiper .swiper-slide::before { content: ""; position: absolute; inset: -3px; border-radius: 15px; z-index: -1; background: linear-gradient(0deg, #D5A200 0%, #ea7203 100%); opacity: 0; transition: 0.3s; }
